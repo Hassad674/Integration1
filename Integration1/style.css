@@ -1,0 +1,113 @@
+/* CSS personnalisé */
+
+/* Réinitialisation des styles de base */
+* {
+  font-family: "Inter", sans-serif; /* Utilisation de la police Inter */
+  margin: 0; /* Suppression des marges par défaut */
+  padding: 0; /* Suppression des espacements internes par défaut */
+  box-sizing: border-box; /* Inclusion de la bordure dans la taille de l'élément */
+}
+
+/* Style global du corps de la page */
+body {
+  min-height: 100vh; /* Taille minimale de la fenêtre visible */
+  background: rgb(29, 29, 29); /* Couleur de fond */
+  color: rgb(250, 250, 250); /* Couleur du texte */
+}
+
+/* Styles de la barre de navigation */
+nav {
+  padding: 10px 20px; /* Espacement interne */
+}
+
+/* Style du texte de la marque de navigation */
+.navbar-brand {
+  font-weight: bold; /* Gras */
+  font-size: 1.5rem; /* Taille du texte */
+  color: white; /* Couleur du texte */
+}
+
+/* Style des liens de navigation */
+.nav-link {
+  color: white; /* Couleur du texte */
+  font-size: 1.2rem; /* Taille du texte */
+}
+
+/* Style des liens de navigation au survol */
+.nav-link:hover {
+  color: #ccc; /* Changement de couleur au survol */
+}
+
+/* Styles de la section d'en-tête */
+.header {
+  margin: 30px auto; /* Marge extérieure haut et bas, centrée horizontalement */
+  padding: 0 20px; /* Espacement interne */
+  text-align: center; /* Centrage du contenu */
+}
+
+/* Styles du contenu de la section d'en-tête à gauche */
+.header-left-container h1 {
+  font-size: 3.5rem; /* Taille du texte */
+  color: #474dff; /* Couleur du texte */
+}
+
+.header-left-container h3 {
+  font-size: 1.5rem; /* Taille du texte */
+  color: #474dff; /* Couleur du texte */
+}
+
+/* Style de l'image de la section d'en-tête */
+#modem {
+  width: 100%; /* Largeur de l'image */
+  height: auto; /* Hauteur automatique proportionnelle */
+}
+
+/* Styles de la section d'informations */
+.infos {
+  border-radius: 10px; /* Bord arrondi */
+  background-color: rgb(10, 10, 10); /* Couleur de fond */
+  margin-top: 30px; /* Marge supérieure */
+}
+
+/* Styles des colonnes de la section d'informations */
+.infos-left, .infos-right {
+  padding: 20px; /* Espacement interne */
+  text-align: center; /* Centrage du contenu */
+}
+
+/* Styles du conteneur de boutons */
+.btn-container {
+  margin-top: 20px; /* Marge supérieure */
+}
+
+/* Styles des boutons */
+.btn {
+  width: 150px; /* Largeur du bouton */
+  padding: 10px 0; /* Espacement interne */
+  border-radius: 10px; /* Bord arrondi */
+  font-weight: bold; /* Gras */
+  letter-spacing: 1px; /* Espacement entre les lettres */
+  margin: 5px 0; /* Marge extérieure haut et bas */
+  font-size: 1rem; /* Taille du texte */
+}
+
+/* Styles du conteneur des logos d'investisseurs */
+.investors {
+  margin-top: 20px; /* Marge supérieure */
+}
+
+/* Styles des logos d'investisseurs */
+.img-container img {
+  height: 60px; /* Hauteur des logos */
+  margin-right: 10px; /* Marge à droite */
+}
+
+/* Ajout de règles CSS pour centrer les boutons sur les appareils mobiles */
+@media (max-width: 768px) {
+  .btn-container {
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    flex-direction: column; /* Disposition en colonne */
+  }
+}
